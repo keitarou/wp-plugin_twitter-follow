@@ -1,0 +1,7 @@
+<h2><?php echo $this->name; ?></h2>
+
+<form action="" method="post">
+<p>＠<input type="text" name="<?php echo $this->option_name;?>" value="<?php echo get_option($this->option_name);?>" /></p>
+<p><input type="submit" value="更新" class="button button-primary" /></p>
+</form>
+
