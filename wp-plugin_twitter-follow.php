@@ -46,8 +46,9 @@ class TwitterFollow
 	表示の際に利用するメソッド
 */
 	// Followボタンの表示
-	public function show_tf() {
+	public function show_tf($content) {
 		$id = htmlspecialchars(get_option($this->option_name), ENT_QUOTES);
 		require 'show_tf.html';
+		return $content;
 	}
 }
